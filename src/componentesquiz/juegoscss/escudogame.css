@@ -1,0 +1,94 @@
+/* EscudoGame.css */
+body{
+  background-color: #3b27b7;
+}
+.game-container {
+  text-align: center;
+  margin-top: 50px;
+}
+.game-container h1 {
+  font-size: 2.5rem; /* Ajusta el tamaño del título */
+  font-family: 'Arial', sans-serif; /* Cambia la fuente del título */
+  font-weight: bold; /* Hace que el título sea más negrita */
+  color: orange; /* Cambia el color del texto */
+  margin-bottom: 20px; /* Agrega un espacio inferior */
+}
+
+
+.teams-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.teams-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teams-container img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  cursor: pointer;
+  background-color: dodgerblue;
+  border-radius: 10px; /* Añadimos bordes redondeados */
+  transition: transform 0.2s ease-in-out; /* Añadimos una transición suave al hacer hover */
+}
+
+.teams-container img:hover {
+  transform: scale(1.1); /* Escala ligeramente la imagen al hacer hover */
+}
+
+.teams-container p {
+  font-size: 1.5rem; /* Ajusta el tamaño del nombre */
+  margin-top: 10px; /* Agrega espacio superior */
+  color:white;
+}
+
+
+.scoreboard {
+  margin-top: 50px; /* Aumentamos el margen superior */
+}
+
+.scoreboard p {
+  font-size: 1.8rem; /* Tamaño de fuente más grande */
+  color: white; /* Color de texto más oscuro */
+  margin-bottom: 10px; /* Aumentamos el margen inferior */
+}
+
+.winner-message {
+  margin-top: 30px;
+}
+
+.winner-message p {
+  font-size: 2rem; /* Tamaño de fuente más grande */
+  font-weight: bold;
+  color: #a2d612; /* Color verde más llamativo */
+  
+}
+
+.winner-message button {
+  margin-top: 20px;
+  padding: 15px 30px; /* Aumentamos el padding para que el botón sea más grande */
+  font-size: 1.2rem; /* Tamaño de fuente más grande */
+  border: none;
+  border-radius: 25px; /* Añadimos bordes redondeados */
+  background-color: #a2d612; /* Color naranja brillante */
+  color: black; /* Texto blanco */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; /* Añadimos una transición suave al cambiar el color de fondo */
+}
+
+.winner-message button:hover {
+  background-color: #cdff3f; /* Cambiamos el color de fondo al hacer hover */
+}
+
+/* Estilos para el mensaje de error */
+.error-message {
+  font-size: 1.5rem; /* Tamaño de fuente más grande */
+  font-weight: bold; /* Texto en negrita */
+  color: red; /* Color rojo para el mensaje de error */
+  margin-top: 20px; /* Espacio superior */
+}
