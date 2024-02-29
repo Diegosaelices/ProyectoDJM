@@ -1,9 +1,9 @@
 // Importa el hook useState de React, así como otros componentes necesarios.
 import { useState } from "react";
-import PantallaPrincipal from "./PantallaPrincipal"; // Importa el componente PantallaPrincipal.
-import '../componentesmemoria/styles/sylesmemoria.css'; // Importa estilos CSS.
-import PantallaJuego from "./PantallaJuego"; // Importa el componente PantallaJuego.
-import PantallaFinal from "./PantallaFinal"; // Importa el componente PantallaFinal.
+import PantallaPrincipal from "./PantallaPrincipal"; 
+import '../componentesmemoria/styles/sylesmemoria.css'; 
+import PantallaJuego from "./PantallaJuego"; 
+import PantallaFinal from "./PantallaFinal"; 
 
 // Función componente Memoria que representa el juego de memoria.
 function Memoria() {
@@ -87,4 +87,4 @@ function Memoria() {
   );
 }
 
-export default Memoria; // Exporta el componente Memoria.
+export default Memoria; 

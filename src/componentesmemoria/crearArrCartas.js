@@ -1,4 +1,3 @@
-// Importa el módulo "data" desde el archivo Api.js ubicado en el mismo directorio.
 import data from "./Api";
 
 // Función que crea un array de cartas basado en un número proporcionado.
@@ -31,11 +30,11 @@ export default function crearArrCartas(numCards) {
     const arr = indicesAleatorios.map((index, cardId) => ({
         id: cardId, // Identificador único de la carta.
         symbol: data.equipos[index].imagen, // Símbolo o imagen de la carta obtenido del módulo "data".
-        bind: index, // Valor asociado a la carta (posiblemente el índice del equipo).
+        bind: index, // Valor asociado a la carta 
         rotate: false, // Estado de rotación de la carta.
         validating: 0, // Estado de validación de la carta.
         pinUp: 0 // Estado de "levantado" de la carta.
     }));
 
-    return arr; // Retorna el array de cartas creado.
+    return arr; 
 }

@@ -9,11 +9,11 @@ export default function Carta(props) {
       // Si props.rotate es true, se agrega la clase 'rotate' para mostrar la carta girada.
       className={`card ${props.rotate ? 'rotate' : ''}`}
       // Se establece el atributo data-id con el valor de props.id, que es una identificación única para esta carta.
-      data-id={props.id} 
       // Se establece un controlador de eventos onClick que se activará cuando se haga clic en la carta.
       // Este controlador pasa los valores de props.id y props.pinUp a la función actionRotate, que manejará la lógica de girar la carta.
-      onClick={() => props.actionRotate(props.id, props.pinUp)} 
       // Se establece un atributo personalizado data-bind con el valor de props.bind.
+      data-id={props.id} 
+      onClick={() => props.actionRotate(props.id, props.pinUp)} 
       data-bind={props.bind}
     >
       {/* Este es el contenedor interno de la carta, que contiene tanto la parte frontal como la trasera de la carta. */}
